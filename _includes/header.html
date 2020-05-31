@@ -1,0 +1,13 @@
+<header>
+  <h2>
+    {{site.title}} {{site.icon}}
+  </h2>
+
+  <nav>
+
+    {% for item in site.data.navigation.items %}
+      <a href="{{item.url | absolute_url}}">{{item.title}}</a>
+    {% endfor %}
+  </nav>
+</header>
+<br>

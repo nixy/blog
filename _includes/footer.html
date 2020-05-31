@@ -1,0 +1,17 @@
+<br>
+<footer>
+  <div>
+    {% if site.email %}
+      Email: <a href="mailto:{{site.email}}">{{site.email}}</a>
+      </br>
+    {% endif %}
+    {% if site.gitlink %}
+      Git: <a href="{{site.gitlink}}">{{site.gitlink}}</a>
+      </br>
+    {% endif %}
+    {% if site.fedilink %}
+      Fediverse: <a href="{{site.fedilink}}">{{site.fedilink}}</a>
+      </br>
+    {% endif %}
+  </div>
+</footer>
